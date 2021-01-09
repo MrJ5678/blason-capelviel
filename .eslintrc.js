@@ -2,11 +2,11 @@
  * @Author: hhhhhq
  * @Date: 2021-01-09 15:39:30
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-09 20:47:29
+ * @LastEditTime: 2021-01-09 21:01:54
  * @Description: file content
  */
 module.exports = {
-  root: false,
+  root: true,
   env: {
     node: true,
   },
