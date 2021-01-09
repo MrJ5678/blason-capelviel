@@ -1,17 +1,17 @@
 <!--
  * @Author: hhhhhq
- * @Date: 2021-01-09 20:37:42
+ * @Date: 2021-01-09 16:27:19
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-09 20:38:12
+ * @LastEditTime: 2021-01-09 16:27:42
  * @Description: file content
 -->
 <template>
-  <div>Home</div>
+  <div>header</div>
 </template>
 
 <script>
 export default {
-  name: "Home",
+  name: "Header",
 }
 </script>
 
