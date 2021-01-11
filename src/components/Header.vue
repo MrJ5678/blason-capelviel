@@ -2,10 +2,12 @@
  * @Author: hhhhhq
  * @Date: 2021-01-09 16:27:19
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-10 16:22:44
+ * @LastEditTime: 2021-01-12 11:18:47
  * @Description: file content
 -->
 <template>
+  <scroll-top />
+  <!-- Header -->
   <header class="l-header" id="header">
     <nav class="nav bd-container">
       <router-link to="/" class="nav__logo">伽贝徽章</router-link>
@@ -13,35 +15,45 @@
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#home" class="nav__link active-link">Home</a>
+            <a href="#home" class="nav__link active-link">主页</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="#about" class="nav__link">关于 · 伽贝徽章</a>
           </li>
           <li class="nav__item">
-            <a href="#services" class="nav__link">Services</a>
+            <a href="#services" class="nav__link">服务</a>
           </li>
           <li class="nav__item">
-            <a href="#portfolio" class="nav__link">Portfolio</a>
+            <a href="#portfolio" class="nav__link">伽贝徽章系列</a>
           </li>
           <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+            <a href="#contact" class="nav__link">联系我们</a>
           </li>
         </ul>
       </div>
 
       <div class="nav__toggle" id="nav-toggle">
-        <i class="bx bx-menu"></i>
+        <fa icon="bars" type="fas" class="icon-toggle-menu"></fa>
       </div>
     </nav>
   </header>
 </template>
 
 <script>
-import { showMenu, linkAction, scrollActive } from "../utils/util"
+import ScrollTop from "./ScrollTop.vue"
+import {
+  showMenu,
+  linkAction,
+  scrollActive,
+  scrollHeader,
+  scrollTop,
+} from "../utils/util"
 
 export default {
   name: "Header",
+  components: {
+    ScrollTop,
+  },
   mounted() {
     showMenu("nav-toggle", "nav-menu")
     this.addClickListenerToNavLink()
@@ -50,6 +62,18 @@ export default {
 
     window.addEventListener("scroll", () => {
       scrollActive(sections)
+    })
+
+    const header = document.getElementById("header")
+
+    window.addEventListener("scroll", () => {
+      scrollHeader(header)
+    })
+
+    const scrollTop = document.getElementById("scroll-top")
+
+    window.addEventListener("scroll", () => {
+      scrollTop(scrollTop)
     })
   },
 
@@ -62,4 +86,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.icon-toggle-menu {
+  width: 1rem;
+}
+</style>
