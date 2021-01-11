@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-10 15:18:27
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-10 16:23:56
+ * @LastEditTime: 2021-01-10 23:42:34
  * @Description: file content
  */
 
@@ -15,8 +15,6 @@
 export const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId)
   const nav = document.getElementById(navId)
-  console.log(toggle)
-  console.log(nav)
 
   if (toggle && nav) {
     toggle.addEventListener("click", () => {
@@ -58,4 +56,18 @@ export const scrollActive = sections => {
         .classList.remove("active-link")
     }
   })
+}
+
+/**
+ * @description: set scrollHeader shadow
+ * @param {*} header
+ * @return {*}
+ */
+export const scrollHeader = header => {
+  const scrollY = window.pageYOffset
+  if (scrollY >= 200) {
+    header.classList.add("scroll-header")
+  } else {
+    header.classList.remove("scroll-header")
+  }
 }
