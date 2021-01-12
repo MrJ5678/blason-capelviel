@@ -2,15 +2,12 @@
  * @Author: hhhhhq
  * @Date: 2021-01-09 16:27:19
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-10 21:29:22
+ * @LastEditTime: 2021-01-12 11:51:31
  * @Description: file content
 -->
 <template>
-  <!-- scroll-top -->
-  <a href="javascript: void(0)" class="scolltop" id="scroll-top">
-    <i class="bx bxs-chevron-up scolltop__icon"></i>
-  </a>
-  <!-- header -->
+  <scroll-top />
+  <!-- Header -->
   <header class="l-header" id="header">
     <nav class="nav bd-container">
       <router-link to="/" class="nav__logo">伽贝徽章</router-link>
@@ -36,17 +33,27 @@
       </div>
 
       <div class="nav__toggle" id="nav-toggle">
-        <i class="bx bx-menu"></i>
+        <fa icon="bars" type="fas" class="icon-toggle-menu"></fa>
       </div>
     </nav>
   </header>
 </template>
 
 <script>
-import { showMenu, linkAction, scrollActive, scrollHeader } from "../utils/util"
+import ScrollTop from "./ScrollTop.vue"
+import {
+  showMenu,
+  linkAction,
+  scrollActive,
+  scrollHeader,
+  scrollTop,
+} from "../utils/util"
 
 export default {
   name: "Header",
+  components: {
+    ScrollTop,
+  },
   mounted() {
     showMenu("nav-toggle", "nav-menu")
     this.addClickListenerToNavLink()
@@ -62,6 +69,12 @@ export default {
     window.addEventListener("scroll", () => {
       scrollHeader(header)
     })
+
+    const scrollTop = document.getElementById("scroll-top")
+
+    window.addEventListener("scroll", () => {
+      scrollTop(scrollTop)
+    })
   },
 
   methods: {
@@ -73,4 +86,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.icon-toggle-menu {
+  width: 1rem;
+}
+</style>

@@ -91,7 +91,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  background-color: var(--first-color-lighten);
+  background-color: #fff;
   color: var(--text-color);
   line-height: 1.6;
 }
@@ -167,7 +167,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #000;
+  background-color: #fff;
 }
 
 /*========== NAV ==========*/
@@ -179,7 +179,7 @@ img {
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .nav__menu {
     position: fixed;
     top: -100%;
@@ -187,7 +187,7 @@ img {
     width: 100%;
     padding: 1.5rem 0 1rem;
     text-align: center;
-    background-color: #000;
+    background-color: #fff;
     transition: 0.6s;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 1rem 1rem;
@@ -200,7 +200,7 @@ img {
 }
 
 .nav__link {
-  color: var(--first-color-lighten);
+  color: var(--first-color);
   transition: 0.3s;
 }
 
@@ -210,7 +210,7 @@ img {
 
 .nav__logo,
 .nav__toggle {
-  color: var(--first-color-lighten);
+  color: var(--first-color);
 }
 
 .nav__toggle {
@@ -234,7 +234,7 @@ img {
 }
 
 .nav__link:hover {
-  color: var(--first-color);
+  color: #c80d1d;
 }
 
 .nav__toggle {
@@ -250,7 +250,7 @@ img {
 /* Active menu */
 .active-link {
   position: relative;
-  /* color: var(--first-color); */
+  color: #c80d1d;
 }
 
 .active-link::after {
@@ -265,7 +265,7 @@ img {
 
 /* Change background header */
 .scroll-header {
-  background-color: var(--first-color-lighten);
+  background-color: var(--first-color-light);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -276,32 +276,34 @@ img {
 }
 
 .scroll-header .nav__menu {
-  background-color: var(--first-color-lighten);
+  background-color: var(--first-color-light);
 }
 
 /* Scroll top */
 .scrolltop {
   position: fixed;
+  width: 2.5rem;
   right: 1rem;
   bottom: -20%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.3rem;
-  background: rgba(6, 156, 84, 0.5);
-  border-radius: 0.4rem;
+  padding: 0.5rem;
+  background: rgba(123, 111, 113, 0.7);
+  border-radius: 0.5rem;
   z-index: var(--z-tooltip);
+  cursor: pointer;
   transition: 0.4s;
   visibility: hidden;
 }
 
 .scrolltop:hover {
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color);
 }
 
 .scrolltop__icon {
   font-size: 1.8rem;
-  color: var(--body-color);
+  color: var(--first-color-lighten);
 }
 
 /* Show scrolltop */

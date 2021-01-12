@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-10 15:18:27
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-10 23:42:34
+ * @LastEditTime: 2021-01-11 15:14:02
  * @Description: file content
  */
 
@@ -59,7 +59,7 @@ export const scrollActive = sections => {
 }
 
 /**
- * @description: set scrollHeader shadow
+ * @description: change background header
  * @param {*} header
  * @return {*}
  */
@@ -69,5 +69,18 @@ export const scrollHeader = header => {
     header.classList.add("scroll-header")
   } else {
     header.classList.remove("scroll-header")
+  }
+}
+
+/**
+ * @description: show scroll top
+ * @param {*}
+ * @return {*}
+ */
+export const scrollTop = scrollTop => {
+  if (scrollY >= 560) {
+    scrollTop.classList.add("show-scroll")
+  } else {
+    scrollTop.classList.remove("show-scroll")
   }
 }
