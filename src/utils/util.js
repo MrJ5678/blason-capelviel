@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-10 15:18:27
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-11 15:14:02
+ * @LastEditTime: 2021-01-15 10:39:29
  * @Description: file content
  */
 
@@ -44,7 +44,7 @@ export const scrollActive = sections => {
   sections.forEach(current => {
     const sectionHeight = current.offsetHeight
     const sectionTop = current.offsetTop - 50
-    sectionId = current.getAttribute("id")
+    let sectionId = current.getAttribute("id")
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
@@ -77,7 +77,7 @@ export const scrollHeader = header => {
  * @param {*}
  * @return {*}
  */
-export const scrollTop = scrollTop => {
+export const funScrollTop = scrollTop => {
   if (scrollY >= 560) {
     scrollTop.classList.add("show-scroll")
   } else {
