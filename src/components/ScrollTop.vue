@@ -2,14 +2,14 @@
  * @Author: hhhhhq
  * @Date: 2021-01-11 15:11:52
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-15 07:39:31
+ * @LastEditTime: 2021-01-17 22:38:11
  * @Description: file content
 -->
 <template>
   <!-- scroll Top -->
-  <div class="scrolltop" id="scroll-top">
+  <a href="#home" class="scrolltop" id="scroll-top">
     <fa icon="angle-up" type="fas" class="scrolltop__icon"></fa>
-  </div>
+  </a>
 </template>
 
 <script>

@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-15 15:43:08
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-16 08:59:10
+ * @LastEditTime: 2021-01-17 22:45:41
  * @Description: file content
 -->
 <template>
@@ -12,18 +12,18 @@
 
     <div class="services__container bd-grid">
       <div class="services__data">
-        <fa icon="phone" type="fas" class="services__icon"></fa>
+        <fa icon="heart" type="fas" class="services__icon"></fa>
         <h3 class="services__title">便利</h3>
         <p class="services__description">
-          便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利
+          我们帮您处理所有的申报与进口清关的文件，在允许的情况下预先支付关税。
         </p>
       </div>
 
       <div class="services__data">
-        <fa icon="phone" type="fas" class="services__icon"></fa>
+        <fa icon="truck" type="fas" class="services__icon icon-truck"></fa>
         <h3 class="services__title">安全</h3>
         <p class="services__description">
-          安全安全安全安全安全安全安全安全安全安全安全安全安全安全安全安全安全安全安全安全安全安全安全安全
+          您无需为运输缺损担心,我们为您提供送达服务,市内当日送货上门,就是这么简单!
         </p>
       </div>
 
@@ -31,7 +31,7 @@
         <fa icon="phone" type="fas" class="services__icon"></fa>
         <h3 class="services__title">便利</h3>
         <p class="services__description">
-          便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利便利
+          我们的核心是一家技术公司。我们独特的移动系统通过跟踪每一瓶酒从出酒庄到客户的全程，来确保产品的真实性。
         </p>
       </div>
     </div>
@@ -46,6 +46,10 @@ export default {
 
 <style>
 .services__icon {
-  width: 1rem;
+  width: 3rem;
+}
+
+svg.icon-truck {
+  margin-bottom: 26px;
 }
 </style>

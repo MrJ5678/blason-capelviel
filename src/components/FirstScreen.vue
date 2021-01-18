@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-14 13:43:52
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-15 07:47:07
+ * @LastEditTime: 2021-01-17 22:39:55
  * @Description: file content
 -->
 <template>
@@ -18,7 +18,7 @@
         </div>
 
         <div class="home__social">
-          <a class="home__social-icon">
+          <a class="home__social-icon" href="#contact">
             <fa icon="weixin" type="fab" class="icon-weixin"></fa>
           </a>
           <a href="tel:13136758989" class="home__social-icon">
