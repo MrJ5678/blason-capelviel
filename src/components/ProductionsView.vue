@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-16 09:16:56
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-18 01:52:44
+ * @LastEditTime: 2021-01-19 15:34:55
  * @Description: file content
 -->
 <template>
@@ -27,7 +27,7 @@
         </div>
         <swiper-slide v-for="production in productionList" :key="production.id">
           <div class="productionlist__content">
-            <a href="/">
+            <a href="/productions">
               <img
                 :src="production.imgUrl"
                 :alt="production.imgAlt"
@@ -38,7 +38,7 @@
               <span class="productionlist__subtitle">
                 {{ production.name }} {{ production.year }}
               </span>
-              <a href="/">
+              <a href="/productions">
                 <h2 class="productionlist__title">
                   {{ production.award }}
                 </h2>
@@ -87,32 +87,56 @@ export default {
           name: "老藤佳丽酿干红",
           year: "2018",
           award: "2015.2016.2018年份荣获柏林世界葡萄酒大赛金奖",
-          imgUrl: require("../assets/img/productionImg1.jpeg"),
+          imgUrl: require("../assets/img/laotengjialiniang.jpeg"),
           imgAlt: "老藤佳丽酿干红",
         },
         {
           id: 2,
-          name: "赤霞珠干红",
+          name: "梅洛-赤霞珠干红",
           year: "2018",
-          award: "2015.2016年份荣获柏林世界葡萄酒大赛金奖",
-          imgUrl: require("../assets/img/productionImg2.jpeg"),
-          imgAlt: "赤霞珠干红",
+          award: "2018年荣获柏林世界葡萄酒大赛金奖 里昂世界葡萄酒大赛金奖",
+          imgUrl: require("../assets/img/meiluochixiazhu.jpeg"),
+          imgAlt: "梅洛-赤霞珠干红",
         },
         {
           id: 3,
-          name: "赤霞珠干红",
+          name: "GSM混酿葡萄酒",
           year: "2018",
-          award: "2015.2016年份荣获柏林世界葡萄酒大赛金奖",
-          imgUrl: require("../assets/img/productionImg2.jpeg"),
-          imgAlt: "赤霞珠干红",
+          award: "",
+          imgUrl: require("../assets/img/gsmhunniang.jpeg"),
+          imgAlt: "GSM混酿葡萄酒",
         },
         {
           id: 4,
+          name: "赤霞珠-西拉干红",
+          year: "2018",
+          award: "2018年荣获柏林世界葡萄酒大赛金奖 里昂世界葡萄酒大赛金奖",
+          imgUrl: require("../assets/img/chixiazhuxila.jpeg"),
+          imgAlt: "赤霞珠-西拉干红",
+        },
+        {
+          id: 5,
           name: "赤霞珠干红",
           year: "2018",
-          award: "2015.2016年份荣获柏林世界葡萄酒大赛金奖",
-          imgUrl: require("../assets/img/productionImg2.jpeg"),
+          award: "2015.2016年荣获柏林世界葡萄酒大赛金奖",
+          imgUrl: require("../assets/img/chixiazhu.jpeg"),
           imgAlt: "赤霞珠干红",
+        },
+        {
+          id: 6,
+          name: "西拉干红",
+          year: "2018",
+          award: "2015.2016年荣获柏林世界葡萄酒大赛金奖",
+          imgUrl: require("../assets/img/xila.jpeg"),
+          imgAlt: "西拉干红",
+        },
+        {
+          id: 7,
+          name: "霞多丽干白",
+          year: "2018",
+          award: "2016.2018年荣获柏林世界葡萄酒大赛金奖",
+          imgUrl: require("../assets/img/xiaduoli.jpeg"),
+          imgAlt: "霞多丽干白",
         },
       ],
     }

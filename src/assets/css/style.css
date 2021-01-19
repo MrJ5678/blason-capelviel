@@ -153,6 +153,11 @@ img {
   margin-right: var(--mb-2);
 }
 
+.services.bd-container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .bd-grid {
   display: grid;
   gap: 1.5rem;
@@ -387,6 +392,9 @@ img {
 }
 
 /*========== ABOUT ==========*/
+.about.bd-container {
+  padding-bottom: 3rem;
+}
 .about__data {
   text-align: center;
 }
@@ -416,19 +424,37 @@ img {
 }
 
 /*========== SERVICES ==========*/
-.services__data {
-  padding: 3rem 1rem;
+.services.bd-container {
+  max-width: unset;
+  width: 100vw;
+  background-image: url(../img/bg-vineyard-1.jpg);
+  background-position: 50% 0;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #fff;
+  overflow: hidden;
+  color: #fff;
+
+  padding-left: var(--mb-6);
+  padding-right: var(--mb-6);
+  padding-bottom: 11rem;
+  padding-top: 16rem;
+}
+
+.services__data {
+  padding: 2rem 1rem;
   border-radius: 0.5rem;
   text-align: center;
   transition: 0.4s;
-  box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
+  /* box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3); */
 }
 
 .services__icon,
 .services__title {
   margin-bottom: var(--mb-2);
-  color: var(--first-color);
+  color: #fff;
+  transition: 0.4s;
 }
 
 .services__icon {
@@ -440,12 +466,16 @@ img {
 }
 
 .services__description {
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-2);
 }
 
 .services__data:hover {
   transform: translateY(-0.5rem);
-  box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
+}
+
+.services__data:hover .services__icon,
+.services__data:hover .services__title {
+  color: var(--first-color-light);
 }
 
 /*========== ProductionView ==========*/
@@ -473,7 +503,8 @@ img {
 }
 
 .productionlist__title {
-  font-size: var(--h3-font-size);
+  min-height: 3rem;
+  font-size: var(--h4-font-size);
   color: var(--first-color-light);
   margin: var(--mb-2) 0;
 }
@@ -637,7 +668,7 @@ img {
   }
 
   .about__description {
-    text-align: initial;
+    text-align: center;
   }
 
   .about__img {
@@ -659,8 +690,7 @@ img {
     width: 500px;
   }
 
-  .about__container,
-  .app__container {
+  .about__container {
     column-gap: 7rem;
   }
 }

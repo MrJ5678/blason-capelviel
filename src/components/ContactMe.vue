@@ -2,12 +2,12 @@
  * @Author: hhhhhq
  * @Date: 2021-01-17 11:28:38
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-17 22:16:39
+ * @LastEditTime: 2021-01-18 17:04:57
  * @Description: file content
 -->
 <template>
   <section class="contact section bd-container" id="contact">
-    <span class="section-subtitle">阁下用酒</span>
+    <span class="section-subtitle">阁下咨询</span>
     <h2 class="section-title">联系我们</h2>
 
     <div class="contact__container bd-grid">

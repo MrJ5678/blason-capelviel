@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-14 13:43:52
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-17 22:39:55
+ * @LastEditTime: 2021-01-19 12:45:40
  * @Description: file content
 -->
 <template>
@@ -11,10 +11,10 @@
     <section class="home" id="home">
       <div class="home__container bd-container bd-grid">
         <div class="home__data">
-          <span class="home__greeting">Hello, 我是伽贝徽章</span>
+          <span class="home__greeting">伽贝徽章</span>
           <h1 class="home__name">blason capelviel</h1>
           <span class="home__profession">法国原瓶进口红酒</span>
-          <a href="#about" class="button button-light">了解更多</a>
+          <a href="#about" class="button button-light home__button">了解更多</a>
         </div>
 
         <div class="home__social">
@@ -38,8 +38,33 @@
 </template>
 
 <script>
+import { gsap } from "gsap"
+
 export default {
   name: "FirstScreen",
+  mounted() {
+    gsap.from(".home__img", { opacity: 0, duration: 2, delay: 0.5, x: 60 })
+    gsap.from(".home__data", { opacity: 0, duration: 2, delay: 0.8, y: 25 })
+    gsap.from(
+      ".home__greeting, .home__name, .home__profession, .home__button",
+      {
+        opacity: 0,
+        duration: 2,
+        delay: 1,
+        y: 25,
+        ease: "expo.out",
+        stagger: 0.2,
+      }
+    )
+    gsap.from(".home__social-icon", {
+      opacity: 0,
+      duration: 2,
+      delay: 2.3,
+      y: 25,
+      ease: "expo.out",
+      stagger: 0.2,
+    })
+  },
 }
 </script>
 
@@ -62,7 +87,7 @@ export default {
   width: 1.6rem;
 }
 
-.icon-phone {
+#home .icon-phone {
   position: relative;
   bottom: 2px;
   width: 1.4rem;

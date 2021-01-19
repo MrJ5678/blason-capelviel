@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-14 13:47:41
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-17 11:18:35
+ * @LastEditTime: 2021-01-19 14:55:45
  * @Description: file content
 -->
 <template>
@@ -16,23 +16,20 @@
           <span>🇫🇷法国<br />伽贝徽章</span>
         </p>
         <div>
-          <span class="about__number">05</span>
-          <span class="about__achievement">years of experience</span>
+          <span class="about__number">2</span>
+          <span class="about__achievement"
+            >分别来自奥克产区(Pays d'Oc) 和 <br />埃罗产区(Pays d'Hérault)
+            <b class="strong__number">2</b> 个产区</span
+          >
         </div>
         <div>
-          <span class="about__number">29</span>
-          <span class="about__achievement">projects completes</span>
+          <span class="about__number"></span>
+          <span class="about__achievement"></span>
         </div>
         <div>
           <span class="about__number">7</span>
           <span class="about__achievement"
-            >伽贝徽章7种系列供您挑选 无论家人欢聚还是商务宴请 都是您的不二选择
-            伽贝徽章7种系列供您挑选 无论家人欢聚还是商务宴请 都是您的不二选择
-            伽贝徽章7种系列供您挑选 无论家人欢聚还是商务宴请 都是您的不二选择
-            伽贝徽章7种系列供您挑选 无论家人欢聚还是商务宴请 都是您的不二选择
-            伽贝徽章7种系列供您挑选 无论家人欢聚还是商务宴请 都是您的不二选择
-            伽贝徽章7种系列供您挑选 无论家人欢聚还是商务宴请
-            都是您的不二选择</span
+            ><b class="strong__number">7</b> 款供您挑选</span
           >
         </div>
       </div>
@@ -51,4 +48,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style>
+.strong__number {
+  font-size: 1.2rem;
+}
+</style>

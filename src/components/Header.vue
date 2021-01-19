@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-09 16:27:19
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-16 14:47:01
+ * @LastEditTime: 2021-01-18 10:51:13
  * @Description: file content
 -->
 <template>
@@ -39,8 +39,29 @@
 </template>
 
 <script>
+import { gsap } from "gsap"
+
 export default {
   name: "Header",
+  mounted() {
+    gsap.from(".nav__logo, .nav__toggle", {
+      opacity: 0,
+      duration: 2,
+      delay: 1,
+      y: 25,
+      ease: "expo.out",
+      stagger: 0.2,
+    })
+
+    gsap.from(".nav__item", {
+      opacity: 0,
+      duration: 2,
+      delay: 1.8,
+      y: 25,
+      ease: "expo.out",
+      stagger: 0.2,
+    })
+  },
 }
 </script>
 

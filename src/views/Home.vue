@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-09 20:37:42
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-17 16:35:56
+ * @LastEditTime: 2021-01-18 10:40:18
  * @Description: file content
 -->
 <template>
@@ -60,24 +60,9 @@ export default {
   mounted() {
     showMenu("nav-toggle", "nav-menu")
     this.addClickListenerToNavLink()
-
-    const sections = document.querySelectorAll("section[id]")
-
-    window.addEventListener("scroll", () => {
-      scrollActive(sections)
-    })
-
-    const header = document.getElementById("header")
-
-    window.addEventListener("scroll", () => {
-      scrollHeader(header)
-    })
-
-    const scrollTop = document.getElementById("scroll-top")
-
-    window.addEventListener("scroll", () => {
-      funScrollTop(scrollTop)
-    })
+    this.addScrollActiveListener()
+    this.addScrollHeaderListener()
+    this.addFunScrollTopListener()
 
     window.onresize = () => {
       this.screenWidth = document.body.clientWidth
@@ -88,6 +73,27 @@ export default {
     addClickListenerToNavLink() {
       const navLink = document.querySelectorAll(".nav__link")
       navLink.forEach(n => n.addEventListener("click", linkAction))
+    },
+    addScrollActiveListener() {
+      const sections = document.querySelectorAll("section[id]")
+
+      window.addEventListener("scroll", () => {
+        scrollActive(sections)
+      })
+    },
+    addScrollHeaderListener() {
+      const header = document.getElementById("header")
+
+      window.addEventListener("scroll", () => {
+        scrollHeader(header)
+      })
+    },
+    addFunScrollTopListener() {
+      const scrollTop = document.getElementById("scroll-top")
+
+      window.addEventListener("scroll", () => {
+        funScrollTop(scrollTop)
+      })
     },
   },
 }
