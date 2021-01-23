@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-10 15:18:27
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-15 10:39:29
+ * @LastEditTime: 2021-01-23 10:54:34
  * @Description: file content
  */
 
@@ -15,6 +15,7 @@
 export const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId)
   const nav = document.getElementById(navId)
+  // console.log("showMenu loaded...")
 
   if (toggle && nav) {
     toggle.addEventListener("click", () => {

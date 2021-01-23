@@ -2,13 +2,13 @@
  * @Author: hhhhhq
  * @Date: 2021-01-09 15:39:30
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-09 20:33:59
+ * @LastEditTime: 2021-01-23 14:31:30
  * @Description: file content
 -->
 <template>
   <div id="main">
     <Header></Header>
-    <router-view></router-view>
+    <router-view :key="$route.fullPath"></router-view>
     <Footer></Footer>
   </div>
 </template>

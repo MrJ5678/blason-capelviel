@@ -2,16 +2,19 @@
  * @Author: hhhhhq
  * @Date: 2021-01-16 09:16:56
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-19 15:34:55
+ * @LastEditTime: 2021-01-23 15:44:50
  * @Description: file content
 -->
 <template>
   <section class="productionlist section bd-container" id="productionlist">
-    <span class="section-subtitle">伽贝徽章葡萄酒系列</span>
+    <span to="/productions" class="section-title" style="display: block;">
+      伽贝徽章葡萄酒系列
+    </span>
     <h2 class="section-title"></h2>
 
     <div class="productionlist__container">
       <swiper
+        autoplay
         :slides-per-view="$props.perViewNumber"
         :space-between="16"
         parallax
@@ -27,23 +30,41 @@
         </div>
         <swiper-slide v-for="production in productionList" :key="production.id">
           <div class="productionlist__content">
-            <a href="/productions">
+            <router-link
+              :to="{
+                name: 'Production',
+                params: { productionId: production.id },
+              }"
+            >
               <img
                 :src="production.imgUrl"
                 :alt="production.imgAlt"
                 class="productionlist__img"
               />
-            </a>
+            </router-link>
             <div class="productionlist__data">
               <span class="productionlist__subtitle">
                 {{ production.name }} {{ production.year }}
               </span>
-              <a href="/productions">
+              <router-link
+                :to="{
+                  name: 'Production',
+                  params: { productionId: production.id },
+                }"
+              >
                 <h2 class="productionlist__title">
                   {{ production.award }}
                 </h2>
-              </a>
-              <a href="/" class="button button-link">了解更多</a>
+              </router-link>
+
+              <router-link
+                :to="{
+                  name: 'Production',
+                  params: { productionId: production.id },
+                }"
+                class="button button-link"
+                >了解更多</router-link
+              >
             </div>
           </div>
         </swiper-slide>

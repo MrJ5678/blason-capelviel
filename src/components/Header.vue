@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-09 16:27:19
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-18 10:51:13
+ * @LastEditTime: 2021-01-23 01:09:30
  * @Description: file content
 -->
 <template>
@@ -14,7 +14,7 @@
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#home" class="nav__link active-link">主页</a>
+            <a href="#home" class="nav__link">主页</a>
           </li>
           <li class="nav__item">
             <a href="#about" class="nav__link">关于 · 伽贝徽章</a>
