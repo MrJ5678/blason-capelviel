@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-09 20:37:42
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-24 00:30:24
+ * @LastEditTime: 2021-01-24 09:11:04
  * @Description: file content
 -->
 <template>
@@ -10,32 +10,21 @@
   <about></about>
   <services></services>
   <productions-view :perViewNumber="perViewNumber"></productions-view>
-  <scroll-top></scroll-top>
   <contact-me></contact-me>
 </template>
 
 <script>
-import ScrollTop from "../components/ScrollTop.vue"
 import FirstScreen from "../components/FirstScreen.vue"
 import About from "../components/About.vue"
 import Services from "../components/Services.vue"
 import ProductionsView from "../components/ProductionsView.vue"
 import ContactMe from "../components/ContactMe.vue"
 
-import {
-  showMenu,
-  linkAction,
-  scrollActive,
-  scrollHeader,
-  funScrollTop,
-} from "../utils/util"
-
 export default {
   name: "Home",
   components: {
     FirstScreen,
     About,
-    ScrollTop,
     Services,
     ProductionsView,
     ContactMe,
@@ -58,43 +47,39 @@ export default {
     },
   },
   mounted() {
-    console.log("mounted")
-    showMenu("nav-toggle", "nav-menu")
-    this.addClickListenerToNavLink()
-    this.addScrollActiveListener()
-    this.addScrollHeaderListener()
-    this.addFunScrollTopListener()
-
-    window.onresize = () => {
-      this.screenWidth = document.body.clientWidth
-    }
+    // console.log("mounted")
+    // showMenu("nav-toggle", "nav-menu")
+    // this.addClickListenerToNavLink()
+    // this.addScrollActiveListener()
+    // this.addScrollHeaderListener()
+    // this.addFunScrollTopListener()
+    // window.onresize = () => {
+    //   this.screenWidth = document.body.clientWidth
+    // }
   },
   methods: {
-    addClickListenerToNavLink() {
-      const navLink = document.querySelectorAll(".nav__link")
-      navLink.forEach(n => n.addEventListener("click", linkAction))
-    },
-    addScrollActiveListener() {
-      const sections = document.querySelectorAll("section[id]")
-
-      window.addEventListener("scroll", () => {
-        scrollActive(sections)
-      })
-    },
-    addScrollHeaderListener() {
-      const header = document.getElementById("header")
-
-      window.addEventListener("scroll", () => {
-        scrollHeader(header)
-      })
-    },
-    addFunScrollTopListener() {
-      const scrollTop = document.getElementById("scroll-top")
-
-      window.addEventListener("scroll", () => {
-        funScrollTop(scrollTop)
-      })
-    },
+    // addClickListenerToNavLink() {
+    //   const navLink = document.querySelectorAll(".nav__link")
+    //   navLink.forEach(n => n.addEventListener("click", linkAction))
+    // },
+    // addScrollActiveListener() {
+    //   const sections = document.querySelectorAll("section[id]")
+    //   window.addEventListener("scroll", () => {
+    //     scrollActive(sections)
+    //   })
+    // },
+    // addScrollHeaderListener() {
+    //   const header = document.getElementById("header")
+    //   window.addEventListener("scroll", () => {
+    //     scrollHeader(header)
+    //   })
+    // },
+    // addFunScrollTopListener() {
+    //   const scrollTop = document.getElementById("scroll-top")
+    //   window.addEventListener("scroll", () => {
+    //     funScrollTop(scrollTop)
+    //   })
+    // },
   },
 }
 </script>

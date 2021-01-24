@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-20 19:46:39
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-24 00:30:32
+ * @LastEditTime: 2021-01-24 17:11:08
  * @Description: file content
 -->
 <template>
@@ -15,12 +15,28 @@
   >
     <div class="production__container bd-grid">
       <div class="production__img">
-        <img :src="currentProduction.imgUrl" :alt="currentProduction.imgAlt" />
+        <img
+          :src="currentProduction.imgUrl"
+          :alt="currentProduction.imgAlt"
+          style="box-shadow: 0 2px 43px -4px rgb(0 0 0 / 19%);"
+        />
       </div>
       <div class="production__info">
         <h2 class="production__title">
-          {{ currentProduction.name }}
-          <span class="production__year">{{ currentProduction.year }}</span>
+          <div style="display: flex; justify-content: flex-start;">
+            <span style="margin-right: 2rem;">{{
+              currentProduction.name
+            }}</span>
+            <div
+              v-if="currentProduction.awardImg"
+              style="display: flex; align-items: center;"
+            >
+              <img
+                :src="currentProduction.awardImg"
+                class="production__awardImg"
+              />
+            </div>
+          </div>
           <p class="production__award">{{ currentProduction.award }}</p>
           <div class="production__title-line"></div>
         </h2>
@@ -52,7 +68,7 @@ export default {
   data() {
     return {
       // publicPath: process.env.BASE_URL,
-      pdfLink: require("@/assets/pdf/blason-capelviel.pdf").default,
+      pdfLink: require("@/assets/pdf/blason-capelviel-new.pdf").default,
       slidePerView: 0,
       screenWidth: document.body.clientWidth,
       currentProduction: {},
@@ -62,6 +78,7 @@ export default {
           name: "老藤佳丽酿干红",
           year: "2018",
           award: "2015.2016.2018年份荣获柏林世界葡萄酒大赛金奖",
+          awardImg: require("@/assets/img/berlinaward.png"),
           imgUrl: require("@/assets/img/laotengjialiniang.jpeg"),
           imgAlt: "老藤佳丽酿干红",
         },
@@ -70,6 +87,7 @@ export default {
           name: "梅洛-赤霞珠干红",
           year: "2018",
           award: "2018年荣获柏林世界葡萄酒大赛金奖 里昂世界葡萄酒大赛金奖",
+          awardImg: require("@/assets/img/lyonaward.png"),
           imgUrl: require("@/assets/img/meiluochixiazhu.jpeg"),
           imgAlt: "梅洛-赤霞珠干红",
         },
@@ -86,6 +104,7 @@ export default {
           name: "赤霞珠-西拉干红",
           year: "2018",
           award: "2018年荣获柏林世界葡萄酒大赛金奖 里昂世界葡萄酒大赛金奖",
+          awardImg: require("@/assets/img/lyonaward.png"),
           imgUrl: require("@/assets/img/chixiazhuxila.jpeg"),
           imgAlt: "赤霞珠-西拉干红",
         },
@@ -110,6 +129,7 @@ export default {
           name: "霞多丽干白",
           year: "2018",
           award: "2016.2018年荣获柏林世界葡萄酒大赛金奖",
+          awardImg: require("@/assets/img/berlinaward.png"),
           imgUrl: require("@/assets/img/xiaduoli.jpeg"),
           imgAlt: "霞多丽干白",
         },
@@ -149,6 +169,10 @@ export default {
   width: 2.5rem;
   height: 3px;
   border-top: 3px solid var(--first-color-light);
+}
+
+.production__awardImg {
+  width: 4rem;
 }
 
 .production__award {

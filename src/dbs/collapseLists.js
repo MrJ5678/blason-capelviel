@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-23 14:42:23
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-23 15:42:14
+ * @LastEditTime: 2021-01-24 11:09:11
  * @Description: file content
  */
 export const lists = [
@@ -49,7 +49,7 @@ export const lists = [
       },
       {
         title: "口感",
-        content: `<div class='collapse__subtitle'>色泽</div><div class='collapse__wrap-text'>宝石红色</div><div class='collapse__subtitle'>香气</div><div class='collapse__wrap-text'>香气复杂, 带有李子和黑樱桃的香气,还有皮革、黑胡椒和香草的芳香</div><div class='collapse__subtitle'>口感</div><div class='collapse__wrap-text'>口感浓郁、圆润和紧致.单宁柔顺,各种成熟的浆果香</div>`,
+        content: `<div class='collapse__subtitle'>色泽</div><div class='collapse__wrap-text'>宝石红色</div><div class='collapse__subtitle'>香气</div><div class='collapse__wrap-text'>香气复杂, 带有李子和黑樱桃的香气,还有皮革、黑胡椒和香草的芳香</div><div class='collapse__subtitle'>口感</div><div class='collapse__wrap-text'>口感浓郁,单宁在口中的包覆感扎实绵密，不断带出优雅果香及层次感、圆润紧致.单宁柔顺,余韵舒服且有美好莓果香.</div>`,
       },
       {
         title: "情况说明",
@@ -66,7 +66,7 @@ export const lists = [
       },
       {
         title: "口感",
-        content: `<div class='collapse__subtitle'>色泽</div><div class='collapse__wrap-text'>宝石红色</div><div class='collapse__subtitle'>香气</div><div class='collapse__wrap-text'>红色水果、香料以及焦糖的芳香交相辉映</div><div class='collapse__subtitle'>口感</div><div class='collapse__wrap-text'>酒体浓郁、平衡和谐、柔顺</div>`,
+        content: `<div class='collapse__subtitle'>色泽</div><div class='collapse__wrap-text'>宝石红色</div><div class='collapse__subtitle'>香气</div><div class='collapse__wrap-text'>红色水果、香料以及焦糖的芳香交相辉映</div><div class='collapse__subtitle'>口感</div><div class='collapse__wrap-text'>集中浓郁的蓝莓、紫罗兰芳香中飘出些许橡木气味；单宁在口中的包覆感扎实绵密，不断带出优雅果香及层次感；余韵深遂悠长，令人想一喝再喝.</div>`,
       },
       {
         title: "情况说明",
@@ -100,7 +100,7 @@ export const lists = [
       },
       {
         title: "口感",
-        content: `<div class='collapse__subtitle'>色泽</div><div class='collapse__wrap-text'>宝石红色</div><div class='collapse__subtitle'>香气</div><div class='collapse__wrap-text'>丰富而典型的黑色水果李子、桑果香,混合优雅的紫罗兰花香,尾调带出细微的香辛料的芳香.</div><div class='collapse__subtitle'>口感</div><div class='collapse__wrap-text'>酒入口香气极其丰富,层次明显,果香和花香馥郁,有西拉代表性的香料芳香</div>`,
+        content: `<div class='collapse__subtitle'>色泽</div><div class='collapse__wrap-text'>宝石红色</div><div class='collapse__subtitle'>香气</div><div class='collapse__wrap-text'>丰富而典型的黑色水果李子、桑果香,混合优雅的紫罗兰花香,尾调带出细微的香辛料的芳香.</div><div class='collapse__subtitle'>口感</div><div class='collapse__wrap-text'>酒入口香气极其丰富,层次明显,果香和花香馥郁.入口后丝滑细致，单宁柔软，具有适当平衡的优质酸度，余韵细长，在喉中留下难忘的莓果香气有西拉代表性的香料芳香</div>`,
       },
       {
         title: "情况说明",
@@ -117,7 +117,7 @@ export const lists = [
       },
       {
         title: "口感",
-        content: `<div class='collapse__subtitle'>色泽</div><div class='collapse__wrap-text'>金色</div><div class='collapse__subtitle'>香气</div><div class='collapse__wrap-text'>浓郁的桃子,热带水果的芳香,伴随黄油的香气</div><div class='collapse__subtitle'>口感</div><div class='collapse__wrap-text'>酒体丰满,香气持久.适宜搭配各种精致头盘、前菜、沙拉、海鲜的理想搭配酒品.</div>`,
+        content: `<div class='collapse__subtitle'>色泽</div><div class='collapse__wrap-text'>金色</div><div class='collapse__subtitle'>香气</div><div class='collapse__wrap-text'>浓郁的桃子,热带水果的芳香,伴随黄油的香气</div><div class='collapse__subtitle'>口感</div><div class='collapse__wrap-text'>酒体丰满,香气持久.在口中散发杏桃、李子及桃类芳香，酒体细致且具有非常优质的酸度，余韵清爽，留下舒畅的水果香气适宜搭配各种精致头盘、前菜、沙拉、海鲜的理想搭配酒品.</div>`,
       },
       {
         title: "情况说明",

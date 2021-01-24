@@ -2,12 +2,12 @@
  * @Author: hhhhhq
  * @Date: 2021-01-11 15:11:52
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-17 22:38:11
+ * @LastEditTime: 2021-01-24 15:22:25
  * @Description: file content
 -->
 <template>
   <!-- scroll Top -->
-  <a href="#home" class="scrolltop" id="scroll-top">
+  <a @click="scrollToTop" class="scrolltop" id="scroll-top">
     <fa icon="angle-up" type="fas" class="scrolltop__icon"></fa>
   </a>
 </template>
@@ -15,6 +15,11 @@
 <script>
 export default {
   name: "ScrollTop",
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0)
+    },
+  },
 }
 </script>
 
