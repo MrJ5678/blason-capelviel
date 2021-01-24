@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-09 20:37:42
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-23 10:35:22
+ * @LastEditTime: 2021-01-24 00:30:24
  * @Description: file content
 -->
 <template>
@@ -58,6 +58,7 @@ export default {
     },
   },
   mounted() {
+    console.log("mounted")
     showMenu("nav-toggle", "nav-menu")
     this.addClickListenerToNavLink()
     this.addScrollActiveListener()
@@ -68,7 +69,6 @@ export default {
       this.screenWidth = document.body.clientWidth
     }
   },
-
   methods: {
     addClickListenerToNavLink() {
       const navLink = document.querySelectorAll(".nav__link")

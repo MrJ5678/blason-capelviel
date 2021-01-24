@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-20 19:46:39
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-23 16:36:11
+ * @LastEditTime: 2021-01-24 00:30:32
  * @Description: file content
 -->
 <template>
@@ -27,8 +27,8 @@
         <collapse :wineId="currentProduction.id"></collapse>
         <div class="download-file-container">
           <a
-            :href="`${publicPath}.pdf`"
-            download="download"
+            :href="pdfLink"
+            download="blason-capelviel"
             class="download link link-icon"
             >VIEW TASTING NOTES AS PDF (28KB)
           </a>
@@ -40,8 +40,6 @@
 </template>
 
 <script>
-import { showMenu } from "../utils/util"
-
 import mixin from "../mixins/mixins"
 import Collapse from "../components/Collapse.vue"
 import ProductionsView from "../components/ProductionsView.vue"
@@ -53,7 +51,8 @@ export default {
   mixins: [mixin],
   data() {
     return {
-      publicPath: process.env.BASE_URL,
+      // publicPath: process.env.BASE_URL,
+      pdfLink: require("@/assets/pdf/blason-capelviel.pdf").default,
       slidePerView: 0,
       screenWidth: document.body.clientWidth,
       currentProduction: {},
@@ -128,9 +127,6 @@ export default {
       }
     },
   },
-  mounted() {
-    showMenu("nav-toggle", "nav-menu")
-  },
   created() {
     this.getCurrentProduction()
   },
@@ -179,5 +175,9 @@ export default {
   background-color: #1c1c1c;
   transition: background-color 0.3s;
   cursor: pointer;
+}
+
+.download-file-container .link-icon:hover {
+  background-color: var(--first-color-light);
 }
 </style>

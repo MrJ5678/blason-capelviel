@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-10 15:18:27
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-23 10:54:34
+ * @LastEditTime: 2021-01-24 00:23:25
  * @Description: file content
  */
 
@@ -15,12 +15,18 @@
 export const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId)
   const nav = document.getElementById(navId)
-  // console.log("showMenu loaded...")
+  console.log("showMenu loaded...")
+  console.log(toggleId)
+  console.log(navId)
 
   if (toggle && nav) {
+    console.log(1)
     toggle.addEventListener("click", () => {
+      console.log(2)
       nav.classList.toggle("show-menu")
+      console.log(3)
     })
+    console.log(4)
   }
 }
 
