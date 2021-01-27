@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-15 15:43:08
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-19 15:22:29
+ * @LastEditTime: 2021-01-27 10:44:32
  * @Description: file content
 -->
 <template>
@@ -13,9 +13,22 @@
     <div class="services__container bd-grid">
       <div class="services__data">
         <fa icon="heart" type="fas" class="services__icon"></fa>
-        <h3 class="services__title">便利</h3>
+        <h3 class="services__title">品质</h3>
         <p class="services__description">
-          我们帮您处理所有的申报与进口清关的文件，在允许的情况下预先支付关税。
+          专注做好进口优质葡萄酒, 满足顾客需求, 推广葡萄酒文化
+        </p>
+      </div>
+
+      <div class="services__data">
+        <fa
+          icon="gem"
+          type="fas"
+          class="services__icon icon-phone"
+          style="margin-bottom: 1.4rem;"
+        ></fa>
+        <h3 class="services__title">服务</h3>
+        <p class="services__description">
+          所有代理酒款均经过多次品试与参考国外重要媒体评比的严格筛选，以期提供客户最好及多样选择
         </p>
       </div>
 
@@ -24,19 +37,6 @@
         <h3 class="services__title">安全</h3>
         <p class="services__description">
           您无需为运输缺损担心,我们为您提供送达服务,市内当日送货上门,就是这么简单!
-        </p>
-      </div>
-
-      <div class="services__data">
-        <fa
-          icon="phone"
-          type="fas"
-          class="services__icon icon-phone"
-          style="margin-bottom: 2rem;"
-        ></fa>
-        <h3 class="services__title">便利</h3>
-        <p class="services__description">
-          我们的核心是一家技术公司。我们独特的移动系统通过跟踪每一瓶酒从出酒庄到客户的全程，来确保产品的真实性。
         </p>
       </div>
     </div>
@@ -77,5 +77,9 @@ svg.icon-truck {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   z-index: -1;
+}
+
+.services__icon {
+  width: 4rem;
 }
 </style>

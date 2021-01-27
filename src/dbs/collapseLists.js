@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-23 14:42:23
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-24 11:09:11
+ * @LastEditTime: 2021-01-26 16:48:12
  * @Description: file content
  */
 export const lists = [
@@ -19,7 +19,7 @@ export const lists = [
       },
       {
         title: "情况说明",
-        content: `<div class='collapse__subtitle'>葡萄酒产区: <span class='collapse__subtitle-expand'>朗格多克大区</span></div><div class='collapse__subtitle'>酿造方式: <span class='collapse__subtitle-expand'>酿制这款佳酿的老藤已经有50年以上的树龄. 不锈钢桶12个月, 橡木桶陈放6个月.</span></div><div class='collapse__subtitle'>葡萄酒分析: <span class='collapse__subtitle-expand'>酒精度: 13%, 适饮温度: 12~14°C</span></div><div class='collapse__subtitle'>葡萄品种: <span class='collapse__subtitle-expand'>100% 老藤歌海娜</span></div>`,
+        content: `<div class='collapse__subtitle'>葡萄酒产区: <span class='collapse__subtitle-expand'>朗格多克大区</span></div><div class='collapse__subtitle'>酿造方式: <span class='collapse__subtitle-expand'>酿制这款佳酿的老藤已经有50年以上的树龄. 不锈钢桶12个月, 橡木桶陈放6个月.</span></div><div class='collapse__subtitle'>葡萄酒分析: <span class='collapse__subtitle-expand'>酒精度: 12.5%, 适饮温度: 12~14°C</span></div><div class='collapse__subtitle'>葡萄品种: <span class='collapse__subtitle-expand'>100% 老藤歌海娜</span></div>`,
       },
     ],
   },
@@ -36,7 +36,7 @@ export const lists = [
       },
       {
         title: "情况说明",
-        content: `<div class='collapse__subtitle'>葡萄酒产区: <span class='collapse__subtitle-expand'>朗格多克大区</span></div><div class='collapse__subtitle'>酿造方式: <span class='collapse__subtitle-expand'>在葡萄达到最佳成熟度的时候开始采收.采用传统的带皮浸提发酵三周,最大限度地提取葡萄皮里的颜色、单宁和芳香物质.在法国橡木桶和美国橡木桶陈酿4个月</span></div><div class='collapse__subtitle'>葡萄酒分析: <span class='collapse__subtitle-expand'>酒精度: 13%, 适饮温度: 12~14°C</span></div><div class='collapse__subtitle'>葡萄品种: <span class='collapse__subtitle-expand'>50% 赤霞珠, 50% 梅洛</span></div>`,
+        content: `<div class='collapse__subtitle'>葡萄酒产区: <span class='collapse__subtitle-expand'>朗格多克大区</span></div><div class='collapse__subtitle'>酿造方式: <span class='collapse__subtitle-expand'>在葡萄达到最佳成熟度的时候开始采收.采用传统的带皮浸提发酵三周,最大限度地提取葡萄皮里的颜色、单宁和芳香物质.在法国橡木桶和美国橡木桶陈酿4个月</span></div><div class='collapse__subtitle'>葡萄酒分析: <span class='collapse__subtitle-expand'>酒精度: 13.5%, 适饮温度: 12~14°C</span></div><div class='collapse__subtitle'>葡萄品种: <span class='collapse__subtitle-expand'>50% 赤霞珠, 50% 梅洛</span></div>`,
       },
     ],
   },
@@ -53,7 +53,7 @@ export const lists = [
       },
       {
         title: "情况说明",
-        content: `<div class='collapse__subtitle'>葡萄酒产区: <span class='collapse__subtitle-expand'>朗格多克大区</span></div><div class='collapse__subtitle'>酿造方式: <span class='collapse__subtitle-expand'>三个葡萄品种成熟时,被分别采收和酿酒.采收后,葡萄被运往酒窖除梗和破碎.不锈钢桶12个月,橡木桶6个月.</span></div><div class='collapse__subtitle'>葡萄酒分析: <span class='collapse__subtitle-expand'>酒精度: 13%, 适饮温度: 12~14°C</span></div><div class='collapse__subtitle'>葡萄品种: <span class='collapse__subtitle-expand'>50% 歌海娜(Carignan), 30% 西拉(Syrah), 20% 牧歌怀特(Mourbedre)</span></div>`,
+        content: `<div class='collapse__subtitle'>葡萄酒产区: <span class='collapse__subtitle-expand'>朗格多克大区</span></div><div class='collapse__subtitle'>酿造方式: <span class='collapse__subtitle-expand'>三个葡萄品种成熟时,被分别采收和酿酒.采收后,葡萄被运往酒窖除梗和破碎.不锈钢桶12个月,橡木桶6个月.</span></div><div class='collapse__subtitle'>葡萄酒分析: <span class='collapse__subtitle-expand'>酒精度: 13.5%, 适饮温度: 12~14°C</span></div><div class='collapse__subtitle'>葡萄品种: <span class='collapse__subtitle-expand'>50% 歌海娜(Carignan), 30% 西拉(Syrah), 20% 牧歌怀特(Mourbedre)</span></div>`,
       },
     ],
   },
@@ -70,7 +70,7 @@ export const lists = [
       },
       {
         title: "情况说明",
-        content: `<div class='collapse__subtitle'>葡萄酒产区: <span class='collapse__subtitle-expand'>朗格多克大区</span></div><div class='collapse__subtitle'>酿造方式: <span class='collapse__subtitle-expand'>在葡萄达到最佳成熟度的时候开始采收.采用传统的带皮浸提方式发酵三周,最大限度地提取葡萄皮里的颜色,单宁和芳香物质.在橡木桶内陈放6个月.</span></div><div class='collapse__subtitle'>葡萄酒分析: <span class='collapse__subtitle-expand'>酒精度: 13%, 适饮温度: 12~14°C</span></div><div class='collapse__subtitle'>葡萄品种: <span class='collapse__subtitle-expand'>50% 赤霞珠, 50% 西拉</span></div>`,
+        content: `<div class='collapse__subtitle'>葡萄酒产区: <span class='collapse__subtitle-expand'>朗格多克大区</span></div><div class='collapse__subtitle'>酿造方式: <span class='collapse__subtitle-expand'>在葡萄达到最佳成熟度的时候开始采收.采用传统的带皮浸提方式发酵三周,最大限度地提取葡萄皮里的颜色,单宁和芳香物质.在橡木桶内陈放6个月.</span></div><div class='collapse__subtitle'>葡萄酒分析: <span class='collapse__subtitle-expand'>酒精度: 13.5%, 适饮温度: 12~14°C</span></div><div class='collapse__subtitle'>葡萄品种: <span class='collapse__subtitle-expand'>50% 赤霞珠, 50% 西拉</span></div>`,
       },
     ],
   },
@@ -87,7 +87,7 @@ export const lists = [
       },
       {
         title: "情况说明",
-        content: `<div class='collapse__subtitle'>葡萄酒产区: <span class='collapse__subtitle-expand'>朗格多克大区</span></div><div class='collapse__subtitle'>酿造方式: <span class='collapse__subtitle-expand'>葡萄经除梗榨汁后,带皮浸提发酵十天左右. 不锈钢桶12个月, 橡木桶陈放6个月.</span></div><div class='collapse__subtitle'>葡萄酒分析: <span class='collapse__subtitle-expand'>酒精度: 13%, 适饮温度: 12~14°C</span></div><div class='collapse__subtitle'>葡萄品种: <span class='collapse__subtitle-expand'>100% 赤霞珠</span></div>`,
+        content: `<div class='collapse__subtitle'>葡萄酒产区: <span class='collapse__subtitle-expand'>朗格多克大区</span></div><div class='collapse__subtitle'>酿造方式: <span class='collapse__subtitle-expand'>葡萄经除梗榨汁后,带皮浸提发酵十天左右. 不锈钢桶12个月, 橡木桶陈放6个月.</span></div><div class='collapse__subtitle'>葡萄酒分析: <span class='collapse__subtitle-expand'>酒精度: 13.5%, 适饮温度: 12~14°C</span></div><div class='collapse__subtitle'>葡萄品种: <span class='collapse__subtitle-expand'>100% 赤霞珠</span></div>`,
       },
     ],
   },
@@ -104,7 +104,7 @@ export const lists = [
       },
       {
         title: "情况说明",
-        content: `<div class='collapse__subtitle'>葡萄酒产区: <span class='collapse__subtitle-expand'>朗格多克大区</span></div><div class='collapse__subtitle'>酿造方式: <span class='collapse__subtitle-expand'>葡萄除梗后被分成两个部分分别酿制. 一部分的西拉葡萄采用现代的热浸提方式,以获得更多西拉葡萄品种特有的芳香物质.不锈钢桶12个月, 橡木桶陈放6个月.</span></div><div class='collapse__subtitle'>葡萄酒分析: <span class='collapse__subtitle-expand'>酒精度: 13%, 适饮温度: 12~14°C</span></div><div class='collapse__subtitle'>葡萄品种: <span class='collapse__subtitle-expand'>100% 西拉</span></div>`,
+        content: `<div class='collapse__subtitle'>葡萄酒产区: <span class='collapse__subtitle-expand'>朗格多克大区</span></div><div class='collapse__subtitle'>酿造方式: <span class='collapse__subtitle-expand'>葡萄除梗后被分成两个部分分别酿制. 一部分的西拉葡萄采用现代的热浸提方式,以获得更多西拉葡萄品种特有的芳香物质.不锈钢桶12个月, 橡木桶陈放6个月.</span></div><div class='collapse__subtitle'>葡萄酒分析: <span class='collapse__subtitle-expand'>酒精度: 13.5%, 适饮温度: 12~14°C</span></div><div class='collapse__subtitle'>葡萄品种: <span class='collapse__subtitle-expand'>100% 西拉</span></div>`,
       },
     ],
   },

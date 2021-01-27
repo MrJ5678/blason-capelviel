@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-09 16:29:47
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-26 16:23:21
+ * @LastEditTime: 2021-01-27 11:06:52
  * @Description: file content
 -->
 <template>
@@ -33,5 +33,9 @@ export default {
 <style>
 .icon-social {
   width: 1rem;
+}
+
+.footer__link {
+  display: inline-block;
 }
 </style>

@@ -2,7 +2,7 @@
  * @Author: hhhhhq
  * @Date: 2021-01-20 19:46:39
  * @LastEditors: hhhhhq
- * @LastEditTime: 2021-01-24 17:11:08
+ * @LastEditTime: 2021-01-27 10:58:31
  * @Description: file content
 -->
 <template>
@@ -46,7 +46,7 @@
             :href="pdfLink"
             download="blason-capelviel"
             class="download link link-icon"
-            >VIEW TASTING NOTES AS PDF (28KB)
+            >VIEW TASTING NOTES AS PDF (2.9MB)
           </a>
         </div>
       </div>
